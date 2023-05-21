@@ -20,7 +20,11 @@ typedef long long ll;
 typedef pair<int,int> pii;
 typedef pair<ll,ll> pll;
 typedef vector<int> vi;
+typedef vector<vector<int>> vvi;
 typedef vector<ll> vl;
+#define REP(i, a, b) for (int i = a; i < b; i++)
+#define RREP(i, a, b) for (int i = a - 1; i >= b; i--)
+#define endl '\n'
 
 int main(void){
     ios_base::sync_with_stdio(false); cin.tie(NULL);
