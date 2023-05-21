@@ -14,7 +14,7 @@
         },
         {
             "type": "shell",
-            "label": "Compile C++17 for CP (TOPCYBERFLOWER)",
+            "label": "Compile C++17 for CP (TOSAAA)",
             "command": "g++",
             "args": [
                 "-std=c++17",
@@ -29,7 +29,7 @@
         },
         {
             "type": "shell",
-            "label": "Execution C++17 (TOPCYBERFLOWER)",
+            "label": "Execution C++17 (TOSAAA)",
             "command": "./algorithm/${fileBasenameNoExtension}.exe",
             "args": [
                 "<",
@@ -39,11 +39,11 @@
             ],
         },
         {
-            "label": "C++17 All in One (TOPCYBERFLOWER)",
+            "label": "C++17 All in One (TOSAAA)",
             "type": "shell",
             "dependsOn": [
-                "Compile C++17 for CP (TOPCYBERFLOWER)",
-                "Execution C++17 (TOPCYBERFLOWER)",
+                "Compile C++17 for CP (TOSAAA)",
+                "Execution C++17 (TOSAAA)",
                 "Remove exe file"
             ],
             "dependsOrder": "sequence",
@@ -57,7 +57,7 @@
         },
         {
             "type": "shell",
-            "label": "Execution Python3 (TOPCYBERFLOWER)",
+            "label": "Execution Python3 (TOSAAA)",
             "command": [
                 "python"
             ],
