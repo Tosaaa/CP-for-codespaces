@@ -2,7 +2,7 @@
 
 using namespace std;
 
-#ifndef __TOPCYBERFLOWER
+#ifndef __TOSAAA
 #define debug(...) 0
 #else
 #define debug(...) cout << " [-] ", _dbg(#__VA_ARGS__, __VA_ARGS__)

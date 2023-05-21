@@ -21,7 +21,7 @@
                 "-g",
                 "-O2",
                 "-D",
-                "__TOPCYBERFLOWER",
+                "__TOSAAA",
                 "algorithm/${fileBasenameNoExtension}.cpp",
                 "-o",
                 "algorithm/${fileBasenameNoExtension}.exe"
