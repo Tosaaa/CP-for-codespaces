@@ -28,21 +28,28 @@ typedef vector<ll> vl;
 
 int main(void){
     ios_base::sync_with_stdio(false); cin.tie(NULL);
-    char curr;
-    char next;
-    REP(i, 0, 3){
-        int max = 1;
-        int len = 1;
-        cin >> curr;
-        REP(j, 0, 7) {
-            cin >> next;
-            if (curr == next) len++;
-            if (max < len) max = len;
-            if (curr != next) len = 1;
-            curr = next;
-        }
-        cout << max << endl;
-    }
     
+    int n;
+    cin >> n;
+    vi b(n+1);
+    REP(i, 1, n+1) {
+        cin >> b[i];
+    }
+    vi S(n+1);
+    REP(i, 1, n+1) {
+        if (i == 1) {
+            S[i] = b[i];
+        } else if (i == 2) {
+            S[i] = b[i-1] + b[i];    
+        } else if (i == 3) {
+            S[i] = max(S[i-2], b[i-1]) + b[i];    
+        } else {
+            S[i] = max(S[i-2], S[i-3] + b[i-1]) + b[i];
+        }
+        
+    }
+    cout << S[n] << endl;   
+
+
     return 0;
 }
